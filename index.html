@@ -5,17 +5,190 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Legal Solutions</title>
+
+  <!-- import google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;800&family=Poppins:wght@400;600&display=swap"
+    rel="stylesheet">
+
   <!-- cdn for tailwind and daisyui -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- configure tailwind custom style -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'primary-col': '#B68C5A',
+            'line-col': '#E7E7E7',
+          },
+          backgroundImage: {
+            'banner-img': "url('images/banner.png')",
+          }
+        }
+      }
+    }
+  </script>
+  <!-- custom styles -->
+  <style>
+    .font-poppins {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .font-ebgaramond {
+      font-family: 'EB Garamond', serif;
+    }
+  </style>
 </head>
 
-<body>
-  <header>
+<body class="font-ebgaramond">
+  <header class="container mx-auto">
+    <!-- navbar starts -->
+    <nav class="navbar bg-base-100 pl-0 pr-0 pt-6 pb-6">
+      <div class="navbar-start">
+        <div>
+          <img src="images/logo2.png" alt="">
+        </div>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a>Home</a></li>
+          <li><a>Services</a></li>
+          <li><a>Cases</a></li>
+          <li><a>Blog</a></li>
+          <li><a>Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <a class="btn bg-primary-col">Free consultation</a>
+      </div>
+    </nav>
+    <!-- navbar ends -->
 
+    <!-- banner starts -->
+    <section class="hero min-h-screen bg-banner-img">
+      <div class="hero-overlay bg-opacity-60"></div>
+      <div class="hero-content text-center text-neutral-content">
+        <div class="max-w-md">
+          <h1 class="mb-5 text-5xl font-bold">We Provide Effective Legal Solutions</h1>
+          <p class="mb-5">There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+            alteration in some form,
+            by injected humour.</p>
+          <input type="text" name="" id="" placeholder="Search your services">
+          <button class="btn btn-primary">Get Started</button>
+        </div>
+      </div>
+    </section>
+    <!-- banner ends -->
   </header>
-  <main>
+  <main class="container mx-auto">
+    <!-- Legal practise area section starts -->
+    <section class="mt-16">
+      <div class="w-1/2 mx-auto">
+        <h2 class="text-center">The Legal Practice Area</h2>
+        <p class="text-center">There are many variations of passages of Lorem Ipsum available, but the majority have
+          suffered alteration in
+          some form,
+          by injected humour.</p>
+      </div>
+      <div class="mt-10 grid grid-cols-3">
+        <!--A card start - 1 -->
+        <div
+          class="card bg-base-100 rounded-none border-r border-b border-line-col hover:border-1 hover:border-line-col hover:bg-line-col">
+          <figure class="px-10 pt-10">
+            <img src="./images/business.png" alt="Icon" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Business Law</h2>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
+              in some form,
+              by injected humour.</p>
+            <img class="mt-4" src="images/forward-icon.svg" alt="">
+          </div>
+        </div>
+        <!-- A card ends - 1 -->
+        <!--A card start - 2 -->
+        <div
+          class="card bg-base-100 rounded-none border-b border-line-col hover:border-1 hover:border-line-col hover:bg-line-col">
+          <figure class="px-10 pt-10">
+            <img src="./images/business.png" alt="Icon" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Business Law</h2>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
+              in some form,
+              by injected humour.</p>
+            <img class="mt-4" src="images/forward-icon.svg" alt="">
+          </div>
+        </div>
+        <!-- A card ends - 2 -->
+        <!--A card start - 3 -->
+        <div
+          class="card bg-base-100 rounded-none border-l border-b border-line-col hover:border-1 hover:border-line-col hover:bg-line-col">
+          <figure class="px-10 pt-10">
+            <img src="./images/business.png" alt="Icon" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Business Law</h2>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
+              in some form,
+              by injected humour.</p>
+            <img class="mt-4" src="images/forward-icon.svg" alt="">
+          </div>
+        </div>
+        <!-- A card ends - 3 -->
+        <!--A card start - 4 -->
+        <div
+          class="card bg-base-100 rounded-none border-r border-line-col hover:border-1 hover:border-line-col hover:bg-line-col">
+          <figure class="px-10 pt-10">
+            <img src="./images/business.png" alt="Icon" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Business Law</h2>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
+              in some form,
+              by injected humour.</p>
+            <img class="mt-4" src="images/forward-icon.svg" alt="">
+          </div>
+        </div>
+        <!-- A card ends - 4-->
+        <!--A card start - 5 -->
+        <div class="card bg-base-100 rounded-none hover:border-1 hover:border-line-col hover:bg-line-col">
+          <figure class="px-10 pt-10">
+            <img src="./images/business.png" alt="Icon" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Business Law</h2>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
+              in some form,
+              by injected humour.</p>
+            <img class="mt-4" src="images/forward-icon.svg" alt="">
+          </div>
+        </div>
+        <!-- A card ends - 5 -->
+        <!--A card start - 6 -->
+        <div
+          class="card bg-base-100 rounded-none border-l border-line-col hover:border-1 hover:border-line-col hover:bg-line-col">
+          <figure class="px-10 pt-10">
+            <img src="./images/business.png" alt="Icon" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Business Law</h2>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
+              in some form,
+              by injected humour.</p>
+            <img class="mt-4" src="images/forward-icon.svg" alt="">
+          </div>
+        </div>
+        <!-- A card ends - 6 -->
 
+    </section>
+
+    <!-- Legal practise area section ends -->
   </main>
   <footer>
 
