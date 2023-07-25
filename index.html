@@ -377,7 +377,7 @@
           suffered alteration in some form,
           by injected humour.</p>
       </div>
-      <div class="flex flex-col md:flex-row">
+      <div class="flex flex-col md:flex-row items-center">
         <div class="flex-1 mt-10 grid grid-cols-1 md:grid-cols-2">
           <!--A card start - 1 -->
           <div
@@ -444,15 +444,46 @@
           </div>
           <!-- A card ends - 4-->
         </div>
-        <div class="flex-1">
-          <form action="" class="flex flex-col space-y-2">
-            <input type="text">
-            <input type="text">
-            <input type="text">
-            <input type="text">
-            <input type="text">
-          </form>
+        <!-- Import Hero Form from DaisyUI -->
+        <div class="flex-1 card flex-shrink-0">
+          <div class="card-body">
+
+            <div class="form-control">
+              <label class="label">
+                <span class="label-text"></span>
+              </label>
+              <input type="text" placeholder="Your Name" class="input input-bordered bg-[#F3F3F3]" />
+            </div>
+
+            <div class="form-control">
+              <label class="label">
+                <span class="label-text"></span>
+              </label>
+              <input type="text" placeholder="Your Email" class="input input-bordered bg-[#F3F3F3]" />
+            </div>
+            <div class="form-control">
+              <label class="label">
+                <span class="label-text"></span>
+              </label>
+              <input type="text" placeholder="Subject" class="input input-bordered bg-[#F3F3F3]" />
+            </div>
+            <div style="width: 100%;
+            height: 150px;
+            padding: 12px 20px;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            background-color: #f8f8f8;
+            font-size: 16px;
+            resize: none;">
+            </div>
+
+            <div class="form-control mt-6">
+              <button class="btn btn-primary">Login</button>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <!-- Contact us part ends -->
   </main>
